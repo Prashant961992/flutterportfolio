@@ -40556,7 +40556,7 @@ M:function(a){var t=null,s=new P.aN(10,10)
 return M.d3(t,this.c,t,t,S.dq(t,new K.b2(s,s,s,s),t,this.d,t,t,C.K),t,new V.W(32,0,32,0),new V.W(32,32,32,32),t)}}
 Q.oj.prototype={
 M:function(a){var t="Proxima",s=u.t
-return T.nu(H.a([O.aA(new P.G(4284590833),"Proxima_Bold",C.M,"Prashant Prajapati!!",C.l,28),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 IOS Developer",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 Android Developer",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 Flutter Developer",C.l,16)],s),C.bN),null)],s),C.b7)}}
+return T.nu(H.a([O.aA(new P.G(4284590833),"Proxima_Bold",C.M,"Prashant Prajapati",C.l,28),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 IOS Developer",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 Android Developer",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.k,t,C.M,"\u2022 Flutter Developer",C.l,16)],s),C.bN),null)],s),C.b7)}}
 O.q1.prototype={
 M:function(a){var t="Proxima",s=u.t
 return T.nu(H.a([O.aA(C.h,t,C.M,"Languages",C.l,28),new T.dC(C.cc,T.cG(H.a([O.aA(C.h,t,C.M,"Swift / Objective-C",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.h,t,C.M,"iPhone / iPad",C.l,16)],s),C.bN),null),new T.dC(C.cc,T.cG(H.a([O.aA(C.h,t,C.M,"Flutter / Dart",C.l,16)],s),C.bN),null)],s),C.b7)}}
