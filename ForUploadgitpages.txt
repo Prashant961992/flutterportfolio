@@ -6,3 +6,9 @@ Setting branch gh-pages on github
 
 Force run in chrome 
 - flutter run -d chrome
+
+
+For Update Code 
+1) flutter pub global run peanut
+2) git pull origin gh-pages --allow-unrelated-histories
+2) git push origin gh-pages
