@@ -3,6 +3,7 @@ import 'package:prashantResume/utils/constants.dart';
 import 'package:prashantResume/widgets/EducationWidget.dart';
 import 'package:prashantResume/widgets/ExperienceWidget.dart';
 import 'package:prashantResume/widgets/JobsRelatedSkill.dart';
+import 'package:prashantResume/widgets/Portfolio.dart';
 import 'package:prashantResume/widgets/contacts_widget.dart';
 import 'package:prashantResume/widgets/holder_container.dart';
 import 'package:prashantResume/widgets/intro_widget.dart';
@@ -134,6 +135,13 @@ class _MobileScreenState extends State<MobileScreen> {
               ),
               HolderContainer(
                 widget: ExperienceWidget(),
+                color: Color(0xFF3366CC),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              HolderContainer(
+                widget: Portfolio(),
                 color: Color(0xFF3366CC),
               ),
               SizedBox(
