@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "Prashant Prajapati",
     "short_name": "Prashant",
+=======
+    "name": "prashantResume",
+    "short_name": "prashantResume",
+>>>>>>> 3c3524669fb8d8b67fb126e4484a1d61f23c8fa1
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
