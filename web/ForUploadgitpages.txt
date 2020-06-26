@@ -1,0 +1,5 @@
+1 - flutter pub global run peanut
+2 - flutter pub global activate peanut
+3 - git push origin gh-pages
+
+Setting branch gh-pages on github
