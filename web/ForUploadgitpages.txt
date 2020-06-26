@@ -3,3 +3,6 @@
 3 - git push origin gh-pages
 
 Setting branch gh-pages on github
+
+Force run in chrome 
+- flutter run -d chrome

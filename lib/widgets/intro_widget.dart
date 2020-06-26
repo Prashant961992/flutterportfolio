@@ -17,7 +17,7 @@ class IntroWidget extends StatelessWidget {
           fontFamilyName: proximaBold,
           color: Color(0xff61AAF1),
           textSize: 28,
-          text: 'Prashant Prajapati',
+          text: 'Prashant Prajapati!!',
         ),
         Padding(
           padding: const EdgeInsets.only(top: 20, bottom: 5),
