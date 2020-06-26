@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '',
+      debugShowCheckedModeBanner: false,
       home: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth > iPadProWidth) {

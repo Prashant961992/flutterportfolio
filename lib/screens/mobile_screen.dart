@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prashantResume/utils/constants.dart';
 import 'package:prashantResume/widgets/EducationWidget.dart';
 import 'package:prashantResume/widgets/ExperienceWidget.dart';
-import 'package:prashantResume/widgets/LanguagesWidget.dart';
+import 'package:prashantResume/widgets/JobsRelatedSkill.dart';
 import 'package:prashantResume/widgets/contacts_widget.dart';
 import 'package:prashantResume/widgets/holder_container.dart';
 import 'package:prashantResume/widgets/intro_widget.dart';
@@ -115,7 +115,7 @@ class _MobileScreenState extends State<MobileScreen> {
                 height: 20,
               ),
               HolderContainer(
-                widget: LanguagesWidget(),
+                widget: JobsRelatedSkill(),
                 color: Colors.white,
               ),
               SizedBox(

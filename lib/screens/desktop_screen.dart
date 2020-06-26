@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prashantResume/utils/constants.dart';
 import 'package:prashantResume/widgets/EducationWidget.dart';
 import 'package:prashantResume/widgets/ExperienceWidget.dart';
-import 'package:prashantResume/widgets/LanguagesWidget.dart';
+import 'package:prashantResume/widgets/JobsRelatedSkill.dart';
 import 'package:prashantResume/widgets/contacts_widget.dart';
 import 'package:prashantResume/widgets/intro_widget.dart';
 import 'package:prashantResume/widgets/skills_widget.dart';
@@ -142,23 +142,12 @@ class _DesktopScreenState extends State<DesktopScreen> {
                     width: _queryData.size.width * 0.10,
                   ),
                   Container(
-                    width: _queryData.size.width * 0.49,
-                    padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Color(0xFF3366CC),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: EducationWidget(),
-                  ),
-                  SizedBox(
-                    width: _queryData.size.width * 0.02,
-                  ),
-                  Container(
-                    width: _queryData.size.width * 0.29,
+                    width: _queryData.size.width * 0.80,
                     padding: EdgeInsets.all(32),
                     decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: LanguagesWidget(),
+                    child: JobsRelatedSkill(),
                   ),
                   SizedBox(
                     width: _queryData.size.width * 0.10,
@@ -176,6 +165,17 @@ class _DesktopScreenState extends State<DesktopScreen> {
                     width: _queryData.size.width * 0.10,
                   ),
                   Container(
+                    width: _queryData.size.width * 0.49,
+                    padding: EdgeInsets.all(32),
+                    decoration: BoxDecoration(
+                        color: Color(0xFF3366CC),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    child: EducationWidget(),
+                  ),
+                  SizedBox(
+                    width: _queryData.size.width * 0.02,
+                  ),
+                  Container(
                     width: _queryData.size.width * 0.29,
                     padding: EdgeInsets.all(32),
                     decoration: BoxDecoration(
@@ -184,10 +184,22 @@ class _DesktopScreenState extends State<DesktopScreen> {
                     child: ContactsWidget(),
                   ),
                   SizedBox(
-                    width: _queryData.size.width * 0.02,
+                    width: _queryData.size.width * 0.10,
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(
+              height: _queryData.size.width * 0.02,
+            ),
+            IntrinsicHeight(
+              child: Row(
+                children: [
+                  SizedBox(
+                    width: _queryData.size.width * 0.10,
                   ),
                   Container(
-                    width: _queryData.size.width * 0.49,
+                    width: _queryData.size.width * 0.80,
                     padding: EdgeInsets.all(32),
                     decoration: BoxDecoration(
                         color: Color(0xFF3366CC),
@@ -209,7 +221,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
               fontFamilyName: proxima,
               textAlign: TextAlign.center,
               textSize: 16,
-              text: 'Copyright © 2020',
+              text: 'Copyright © 2020 Prashant Prajapati',
             ),
             SizedBox(
               height: 70,

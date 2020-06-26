@@ -25,7 +25,7 @@ class SocialWidget extends StatelessWidget {
         IconButton(
           icon: Image.asset('assets/icons/linkedin.webp'),
           onPressed: () {
-            launchURL("https://www.linkedin.com/in/juned-siddiqui-0b4a45a3/");
+            launchURL("https://www.google.com/");
           },
           iconSize: 10.0,
         ),
@@ -35,7 +35,7 @@ class SocialWidget extends StatelessWidget {
         IconButton(
           icon: Image.asset('assets/icons/facebook.webp'),
           onPressed: () {
-            launchURL("https://www.facebook.com/juned.siddiqui.39/");
+            launchURL("https://www.google.com/");
           },
           iconSize: 10.0,
         ),
@@ -45,7 +45,7 @@ class SocialWidget extends StatelessWidget {
         IconButton(
           icon: Image.asset('assets/icons/instagram.webp'),
           onPressed: () {
-            launchURL("https://www.instagram.com/sid_junaid77/");
+            launchURL("https://www.google.com/");
           },
           iconSize: 10.0,
         ),

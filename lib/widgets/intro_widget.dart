@@ -19,15 +19,47 @@ class IntroWidget extends StatelessWidget {
           textSize: 28,
           text: 'Prashant Prajapati',
         ),
-        TextWidget(
-            padding: EdgeInsets.only(top: 10),
-            text: '- IOS Developer \n- Smart phone application developer',
-            fontFamilyName: proxima,
-            textSize: 20),
-        TextWidget(
-          padding: EdgeInsets.only(top: 20),
-          text: 'This website developed in Flutter!',
-          textSize: 16,
+        Padding(
+          padding: const EdgeInsets.only(top: 20, bottom: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextWidget(
+                text: '• IOS Developer',
+                textSize: 16,
+                fontFamilyName: proxima,
+                color: Colors.black,
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 20, bottom: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextWidget(
+                text: '• Android Developer',
+                textSize: 16,
+                fontFamilyName: proxima,
+                color: Colors.black,
+              ),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(top: 20, bottom: 5),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              TextWidget(
+                text: '• Flutter Developer',
+                textSize: 16,
+                fontFamilyName: proxima,
+                color: Colors.black,
+              ),
+            ],
+          ),
         ),
       ],
     );
