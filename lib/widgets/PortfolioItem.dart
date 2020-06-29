@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PortfolioItem extends StatefulWidget {
   final String img;
@@ -19,6 +20,15 @@ class PortfolioItem extends StatefulWidget {
 
 class _PortfolioItemState extends State<PortfolioItem> {
 
+  launchURL(String urlData) async {
+    var url = urlData;
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -27,20 +37,13 @@ class _PortfolioItemState extends State<PortfolioItem> {
         height: MediaQuery.of(context).size.height / 2.9,
         width: MediaQuery.of(context).size.height / 2.9,
         child: Card(
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
           elevation: 3.0,
           child: Hero(
             tag: 'heroid' + widget.heroid.toString(),
             child: InkWell(
               onTap: () {
-                // Navigator.of(context).push(
-                //         MaterialPageRoute(
-                //           builder: (BuildContext context){
-                //             return widget.route_page_name;
-                //           },
-                //         ),
-                //       );
+                launchURL(widget.appLink);
               },
               child: Column(
                 children: <Widget>[
@@ -64,7 +67,7 @@ class _PortfolioItemState extends State<PortfolioItem> {
                   ),
                   SizedBox(height: 7.0),
                   Padding(
-                    padding: EdgeInsets.only(left: 15.0),
+                    padding: EdgeInsets.only(left: 15.0, right: 15.0),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       child: Text(

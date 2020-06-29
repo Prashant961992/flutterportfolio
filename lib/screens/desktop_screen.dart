@@ -3,7 +3,7 @@ import 'package:prashantResume/utils/constants.dart';
 import 'package:prashantResume/widgets/EducationWidget.dart';
 import 'package:prashantResume/widgets/ExperienceWidget.dart';
 import 'package:prashantResume/widgets/JobsRelatedSkill.dart';
-import 'package:prashantResume/widgets/Portfolio.dart';
+import 'package:prashantResume/widgets/PortfolioView.dart';
 import 'package:prashantResume/widgets/contacts_widget.dart';
 import 'package:prashantResume/widgets/intro_widget.dart';
 import 'package:prashantResume/widgets/skills_widget.dart';
@@ -228,7 +228,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
                     decoration: BoxDecoration(
                         color: Color(0xFF3366CC),
                         borderRadius: BorderRadius.all(Radius.circular(10))),
-                    child: Portfolio(),
+                    child: PortfolioView(),
                   ),
                   SizedBox(
                     width: _queryData.size.width * 0.10,
