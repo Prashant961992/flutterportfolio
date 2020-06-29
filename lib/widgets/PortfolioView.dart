@@ -12,14 +12,26 @@ class PortfolioModel {
 
   static List<PortfolioModel> fetchAll() {
     return [
+      // PortfolioModel(
+      //     "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      //     "Baroda Basket ",
+      //     "https://itunes.apple.com/us/app/baroda-basket/id1278810896?mt=8"),
+      // PortfolioModel(
+      // "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+      // "iPill Med Reminder",
+      // "https://itunes.apple.com/us/app/ipill-med-reminder/id1413679105?ls=1&mt=8"),
       PortfolioModel(
           "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Baroda Basket ",
-          "https://itunes.apple.com/us/app/baroda-basket/id1278810896?mt=8"),
+          "Revisn Residence Connect",
+          "https://itunes.apple.com/us/app/revisn-residence-connect/id1441003077?ls=1&mt=8"),
       PortfolioModel(
           "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "iPill Med Reminder",
-          "https://itunes.apple.com/us/app/ipill-med-reminder/id1413679105?ls=1&mt=8"),
+          "Badger",
+          "https://itunes.apple.com/us/app/badger/id1434686247?ls=1&mt=8"),
+      PortfolioModel(
+          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
+          "OneCart: Groceries On Demand",
+          "https://apps.apple.com/bj/app/onecart-groceries-on-demand/id1438395604"),
       PortfolioModel(
           "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "AgriEng",
@@ -40,18 +52,6 @@ class PortfolioModel {
           "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "CHARGE ZONE",
           "https://itunes.apple.com/us/app/charge-zone/id1451176401?ls=1&mt=8"),
-      PortfolioModel(
-          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Badger",
-          "https://itunes.apple.com/us/app/badger/id1434686247?ls=1&mt=8"),
-      PortfolioModel(
-          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "Revisn Residence Connect",
-          "https://itunes.apple.com/us/app/revisn-residence-connect/id1441003077?ls=1&mt=8"),
-      PortfolioModel(
-          "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
-          "OneCart: Groceries On Demand",
-          "https://apps.apple.com/bj/app/onecart-groceries-on-demand/id1438395604"),
       PortfolioModel(
           "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80",
           "Inspectab: Version 1.0",
