@@ -10,5 +10,5 @@ Force run in chrome
 
 For Update Code 
 1) flutter pub global run peanut
-2) git pull origin gh-pages --allow-unrelated-histories
+2) git pull origin gh-pages --allow-unrelated-histories (optional)
 2) git push origin gh-pages
