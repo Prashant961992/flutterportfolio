@@ -19,47 +19,26 @@ class EducationWidget extends StatelessWidget {
           textSize: 28,
           text: 'Education',
         ),
-        TextWidget(
-          padding: EdgeInsets.only(top: 10),
-          text: 'TOPS Technologies',
-          color: Color(0xff61AAF1),
-          textSize: 30,
-        ),
-        TextWidget(
-          padding: EdgeInsets.only(top: 20),
-          color: Colors.white,
-          fontFamilyName: proxima,
-          textSize: 18,
-          text:
-              'iPhone Development     06.2015-11.2015',
+        SizedBox(
+          height: 10,
         ),
         TextWidget(
           padding: EdgeInsets.only(top: 10),
-          text: 'Bachelor of Engineering',
-          color: Color(0xff61AAF1),
-          textSize: 30,
-        ),
-        TextWidget(
-          padding: EdgeInsets.only(top: 20),
+          text: 'iPhone Development | TOPS Technologies | 06.2015-11.2015',
           color: Colors.white,
-          fontFamilyName: proxima,
-          textSize: 18,
-          text:
-              'Electronics and Communication     07.2011-07.2014',
+          textSize: 16,
         ),
         TextWidget(
           padding: EdgeInsets.only(top: 10),
-          text: 'Diploma Engineering',
-          color: Color(0xff61AAF1),
-          textSize: 30,
+          text: 'Electronics and Communication | Bachelor of Engineering | 07.2011-07.2014',
+          color: Colors.white,
+          textSize: 16,
         ),
         TextWidget(
-          padding: EdgeInsets.only(top: 20),
+          padding: EdgeInsets.only(top: 10),
+          text: 'Electronics and Communication | Diploma Engineering | 06.2008-06.2011',
           color: Colors.white,
-          fontFamilyName: proxima,
-          textSize: 18,
-          text:
-              'Electronics and Communication     06.2008-06.2011',
+          textSize: 16,
         ),
       ],
     );

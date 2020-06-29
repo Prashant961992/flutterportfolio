@@ -17,13 +17,13 @@ class ContactsWidget extends StatelessWidget {
           text: 'Personal details',
           fontFamilyName: proxima,
           textSize: 28,
-          color: Colors.black,
+          color: Colors.white,
         ),
         SizedBox(
           height: 20,
         ),
         Row(children: <Widget>[
-          Icon(Icons.place, size: 15),
+          Icon(Icons.place, size: 15,color: Colors.white,),
           SizedBox(
             width: 10,
           ),
@@ -32,7 +32,7 @@ class ContactsWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: proxima,
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.white,
             ),
           )
         ]),
@@ -42,6 +42,7 @@ class ContactsWidget extends StatelessWidget {
         Row(children: <Widget>[
           Icon(
             Icons.phone,
+            color: Colors.white,
             size: 15,
           ),
           SizedBox(
@@ -52,7 +53,7 @@ class ContactsWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: proxima,
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.white,
             ),
           )
         ]),
@@ -62,6 +63,7 @@ class ContactsWidget extends StatelessWidget {
         Row(children: <Widget>[
           Icon(
             Icons.mail,
+            color: Colors.white,
             size: 15,
           ),
           SizedBox(
@@ -72,7 +74,7 @@ class ContactsWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: proxima,
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.white,
             ),
           )
         ]),
@@ -82,6 +84,7 @@ class ContactsWidget extends StatelessWidget {
         Row(children: <Widget>[
           Icon(
             Icons.cake,
+            color: Colors.white,
             size: 15,
           ),
           SizedBox(
@@ -92,7 +95,7 @@ class ContactsWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: proxima,
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.white,
             ),
           )
         ]),
@@ -102,6 +105,7 @@ class ContactsWidget extends StatelessWidget {
         Row(children: <Widget>[
           Icon(
             Icons.flag,
+            color: Colors.white,
             size: 15,
           ),
           SizedBox(
@@ -112,7 +116,7 @@ class ContactsWidget extends StatelessWidget {
             style: TextStyle(
               fontFamily: proxima,
               fontSize: 16,
-              color: Colors.black,
+              color: Colors.white,
             ),
           )
         ]),

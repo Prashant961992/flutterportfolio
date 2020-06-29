@@ -33,9 +33,9 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/collection-1.14.12",
+      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/collection-1.14.13",
       "packageUri": "lib/",
-      "languageVersion": "2.0"
+      "languageVersion": "2.3"
     },
     {
       "name": "cupertino_icons",
@@ -75,9 +75,9 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.6",
+      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/matcher-0.12.8",
       "packageUri": "lib/",
-      "languageVersion": "2.2"
+      "languageVersion": "2.4"
     },
     {
       "name": "meta",
@@ -147,7 +147,7 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.16",
+      "rootUri": "file:///Users/confidosoft/.pub-cache/hosted/pub.dartlang.org/test_api-0.2.17",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     },
@@ -194,7 +194,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2020-06-26T12:54:44.903388Z",
+  "generated": "2020-06-29T12:39:27.035650Z",
   "generator": "pub",
-  "generatorVersion": "2.9.0-16.0.dev.flutter-2b917f5b6a"
+  "generatorVersion": "2.9.0-19.0.dev.flutter-7e72c9ae7e"
 }

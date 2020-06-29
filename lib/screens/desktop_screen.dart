@@ -51,9 +51,22 @@ class _DesktopScreenState extends State<DesktopScreen> {
   @override
   Widget build(BuildContext context) {
     _queryData = MediaQuery.of(context);
+    var boxDecoration = BoxDecoration(
+        color: Color(0xFF000000),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.white.withOpacity(0.5),
+            spreadRadius: 1,
+            blurRadius: 7,
+            offset: Offset.zero, // changes position of shadow
+          ),
+        ],
+        borderRadius: BorderRadius.all(Radius.circular(10)));
+
     return Scaffold(
       body: Container(
         width: double.maxFinite,
+        // color: Colors.black,
         decoration: myBackground,
         child: ListView(
           children: [
@@ -61,18 +74,13 @@ class _DesktopScreenState extends State<DesktopScreen> {
               height: 70,
             ),
             _getCircleImage("assets/images/img1.jpg"),
-            // Image.asset(
-            //   'assets/images/my_image.png',
-            //   width: 200,
-            //   height: 200,
-            // ),
             SizedBox(
               height: 30,
             ),
             Text(
               'Hi! I am Prashant',
               style: TextStyle(
-                  color: Color(0xff60BEEE),
+                  color: Color(0XFF2AD36F),
                   fontSize: 40,
                   fontFamily: 'Proxima',
                   shadows: [
@@ -111,18 +119,14 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.39,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
                     child: IntroWidget(),
                   ),
                   SizedBox(
                     width: _queryData.size.width * 0.02,
                   ),
                   Container(
-                    decoration: BoxDecoration(
-                        color: Color(0xFF3366CC),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
                     width: _queryData.size.width * 0.39,
                     padding: EdgeInsets.all(32),
                     child: SkillsWidget(),
@@ -145,9 +149,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.80,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
                     child: JobsRelatedSkill(),
                   ),
                   SizedBox(
@@ -168,9 +170,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.49,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Color(0xFF3366CC),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
                     child: EducationWidget(),
                   ),
                   SizedBox(
@@ -179,9 +179,7 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.29,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
                     child: ContactsWidget(),
                   ),
                   SizedBox(
@@ -202,9 +200,10 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.80,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Color(0xFF3366CC),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
+                    // decoration: BoxDecoration(
+                    //     color: Color(0xFF3366CC),
+                    //     borderRadius: BorderRadius.all(Radius.circular(10))),
                     child: ExperienceWidget(),
                   ),
                   SizedBox(
@@ -225,9 +224,10 @@ class _DesktopScreenState extends State<DesktopScreen> {
                   Container(
                     width: _queryData.size.width * 0.80,
                     padding: EdgeInsets.all(32),
-                    decoration: BoxDecoration(
-                        color: Color(0xFF3366CC),
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
+                    decoration: boxDecoration,
+                    // decoration: BoxDecoration(
+                    //     color: Color(0xFF3366CC),
+                    //     borderRadius: BorderRadius.all(Radius.circular(10))),
                     child: PortfolioView(),
                   ),
                   SizedBox(
