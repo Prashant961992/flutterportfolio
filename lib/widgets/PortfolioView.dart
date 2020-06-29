@@ -102,7 +102,7 @@ class _PortfolioViewState extends State<PortfolioView> {
         children: [
           TextWidget(
             fontFamilyName: proxima,
-            color: Color(0xff61AAF1),
+            color: Colors.white,
             textSize: 28,
             text: 'Portfolio',
           ),
