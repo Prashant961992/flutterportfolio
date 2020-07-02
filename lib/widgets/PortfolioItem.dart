@@ -19,7 +19,6 @@ class PortfolioItem extends StatefulWidget {
 }
 
 class _PortfolioItemState extends State<PortfolioItem> {
-
   launchURL(String urlData) async {
     var url = urlData;
     if (await canLaunch(url)) {
@@ -29,16 +28,30 @@ class _PortfolioItemState extends State<PortfolioItem> {
     }
   }
 
+  var boxDecoration = BoxDecoration(
+      color: Color(0xFF000000),
+      boxShadow: [
+        BoxShadow(
+          color: Colors.white.withOpacity(0.5),
+          spreadRadius: 1,
+          blurRadius: 7,
+          offset: Offset.zero, // changes position of shadow
+        ),
+      ],
+      borderRadius: BorderRadius.all(Radius.circular(10)));
+
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(top: 5.0, bottom: 5.0),
       child: Container(
+        decoration: boxDecoration,
         height: MediaQuery.of(context).size.height / 2.9,
         width: MediaQuery.of(context).size.height / 2.9,
         child: Card(
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-          elevation: 3.0,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+          elevation: 1.0,
           child: Hero(
             tag: 'heroid' + widget.heroid.toString(),
             child: InkWell(
@@ -50,7 +63,6 @@ class _PortfolioItemState extends State<PortfolioItem> {
                   Stack(
                     children: <Widget>[
                       Container(
-                        //  height: MediaQuery.of(context).size.height/3.5,
                         width: MediaQuery.of(context).size.width,
                         child: ClipRRect(
                           borderRadius: BorderRadius.only(
@@ -65,9 +77,9 @@ class _PortfolioItemState extends State<PortfolioItem> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 7.0),
+                  SizedBox(height: 10.0),
                   Padding(
-                    padding: EdgeInsets.only(left: 15.0, right: 15.0),
+                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       child: Text(
@@ -77,6 +89,25 @@ class _PortfolioItemState extends State<PortfolioItem> {
                           fontWeight: FontWeight.w800,
                         ),
                         textAlign: TextAlign.left,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 15.0),
+                  Container(
+                    width: 140,
+                    height: 30,
+                    child: FlatButton(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                          side: BorderSide(color: Color(0XFF2AD36F))),
+                      textColor: Colors.white,
+                      color: Color(0XFF2AD36F),
+                      splashColor: Color(0XFF2AD36F),
+                      onPressed: () {
+                        launchURL(widget.appLink);
+                      },
+                      child: Text(
+                        "View More",
                       ),
                     ),
                   ),
